@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./css/gallery.css" />
+</head>
+
+
+<body>
+  <div class="back-link-container">
+    <a class="back-link" href="./index.html">Go back</a>
+  </div>
+
+
+  <!-- Search Form -->
+  <div class="form-container">
+    <form id="search-form">
+      <input type="text" id="query" placeholder="Görsel aramak için yazın..." required />
+      <button type="submit">Ara</button>
+    </form>
+  </div>
+  <!-- Loader -->
+  <div id="loader" style="display: none;">Loading images, please wait...</div>
+
+  <div id="gallery"></div>
+
+  <!-- Load More Button -->
+  <button id="load-more-btn" style="display: none;">Load more</button>
+
+  <script type="module" src="./js/01-gallery.js"></script>
+
+
+</body>
+
+<load src="./partials/footer.html" />
+
+</html>

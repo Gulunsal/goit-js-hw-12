@@ -1,0 +1,130 @@
+/*Gallery styles*/
+
+/*Gallery Page Styeles*/
+/**  
+  |============================
+  | Include CSS partials with
+  | default @import url()
+  |============================
+*/
+
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./back-link.css');
+@import url('./footer.css');
+
+/* Back Link Container */
+.back-link-container {
+  margin-left: 40px; /* Soldan 40px boşluk */
+  text-align: left; /* Butonu sola hizala */
+}
+/* Form Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* Search Form */
+#search-form {
+  display: flex;
+  gap: 10px;
+}
+
+#query {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+/* Gallery Section */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Esnek kart düzeni */
+  gap: 20px; /* Kartlar arasındaki boşluk */
+  justify-items: center; /* Kartları yatayda ortalar */
+  padding: 20px;
+}
+
+.image-card {
+  width: 100%; /* Kart genişliği */
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Yuvarlatılmış köşeler */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+  background-color: #fff;
+  transition: transform 0.2s ease; /* Hover'da büyütme efekti */
+}
+
+.image-card:hover {
+  transform: scale(1.05); /* Hover sırasında hafif büyütme */
+}
+#load-more-btn {
+  display: block;
+  margin: 20px auto; /* Butonu ortalar */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#load-more-btn:hover {
+  background-color: #0056b3;
+}
+
+#load-more-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#loader {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin: 40px 0;
+  animation: blink 1s infinite; /* Yanıp sönen efekt */
+}
+
+/* Yanıp sönen animasyon */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
