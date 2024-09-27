@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <script type="module" crossorigin src="/goit-js-hw-12/01-gallery.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-CHbHyY-E.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DkczhqSJ.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/01-gallery-CIMcy_iV.css">
+</head>
+
+
+<body>
+  <div class="back-link-container">
+    <a class="back-link" href="./index.html">Go back</a>
+  </div>
+
+
+  <!-- Search Form -->
+  <div class="form-container">
+    <form id="search-form">
+      <input type="text" id="query" placeholder="Görsel aramak için yazın..." required />
+      <button type="submit">Ara</button>
+    </form>
+  </div>
+  <!-- Loader -->
+  <div id="loader" style="display: none;">Loading images, please wait...</div>
+
+  <div id="gallery"></div>
+
+  <!-- Load More Button -->
+  <button id="load-more-btn" style="display: none;">Load more</button>
+
+
+
+</body>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-desc">
+      Made with ✨ by
+      <a
+        class="footer-link"
+        href="https://goit.global/ua/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT team
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+</html>
